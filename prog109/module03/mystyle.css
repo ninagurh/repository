@@ -9,7 +9,7 @@ h1 {
 		text-align: center;
 		color: blue;
 		font-size:400%;}
-	}
+
 p {
 	@font-face {
 		font-family: 'DancingScriptRegular';
@@ -17,6 +17,6 @@ p {
 		font-weight: normal;
 		font-style: normal;
 		font-size: 200%;}
-	}
+
 i {
 	color: darkgreen;}
