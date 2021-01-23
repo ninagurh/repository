@@ -2,20 +2,16 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	color: #665544;
 	padding: 0 15% 0 15%;}
-h1 {
-	@font-face{
+@font-face{
 		font-family: 'DancingScriptRegular';
 		src: url('https://fontlibrary.org/face/dancing');
 }
+h1 {
 	text-align: center;
 	color: blue;
-	font-size:400%;
-}	
-p {
-	@font-face{
-		font-family: 'DancingScriptRegular';
-		src: url('https://fontlibrary.org/face/dancing');
+	font-size: 400%;
 }
+p {
 	font-weight: normal;
 	font-style: normal;
 	font-size: 200%;
