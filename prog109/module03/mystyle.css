@@ -5,10 +5,16 @@ body {
 h1 {
 	text-align: center;
 	color: blue;
-	font-family:'DancingScriptRegular';
+	@font-face: {
+		font-family: 'DancingScriptRegular';
+		source: url('https://fontlibrary.org/face/dancing');
+	}
         font-size:400%;}
 p {
-        font-family:'DancingScriptRegular';
+	@font-face: {
+		font-family: 'DancingScriptRegular';
+		source: url('https://fontlibrary.org/face/dancing');
+	}
         font-weight: normal;
         font-style: normal;
         font-size: 200%;}
