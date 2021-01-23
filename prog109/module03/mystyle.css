@@ -3,14 +3,14 @@ body {
 	color: #665544;
 	padding: 0 15% 0 15%;}
 h1 {
-	@font-face: {
+	@font-face {
 		font-family: 'DancingScriptRegular';
 		source: url('https://fontlibrary.org/face/dancing');
 		text-align: center;
 		color: blue;
 		font-size:400%;}
 p {
-	@font-face: {
+	@font-face {
 		font-family: 'DancingScriptRegular';
 		source: url('https://fontlibrary.org/face/dancing');
 		font-weight: normal;
