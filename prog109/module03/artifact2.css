@@ -1,0 +1,40 @@
+@font-face{
+  font-family: 'NovaSquareSlimBoldOblique';
+  }
+
+#header {
+  max-width: 1000px;
+  font-family: 'NovaSquareSlimBoldOblique';
+  font-size: 400%;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  }
+#chessboard{
+  
+  height: 1000px;
+  width: 1000px;
+  background-color: blue;
+  background-image: url("https://cdn1.vectorstock.com/i/1000x1000/47/15/rainbow-colorful-kaleidoscope-background-vector-3414715.jpg");;
+}
+li {
+  display: inline;  
+  border:2px solid black;
+  padding: 33px;
+
+}
+li.white {
+  background-color: white;
+  width:10px;
+  height: 10px;
+  padding:60px;
+}
+li.black {
+  width:10px;
+  height: 24px;
+  background-color: black;
+  padding:60px;
+}
