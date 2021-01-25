@@ -48,14 +48,17 @@ clear:both;
  top:0px;
  left:0px; 
  padding:10px;
- margin:0px;
+ margin-top: 20px;
+ margin-bottom: 20px;
  width:100%;
- background-color:lightyellow;
+ background-color:pink;
  text-align:center; 
  z-index:10;
 }
 body {
  background-image:url("https://cdn1.vectorstock.com/i/1000x1000/47/15/rainbow-colorful-kaleidoscope-background-vector-3414715.jpg");
+ background-repeat: no-repeat;
+ background-size: 1200px 1200px;
 }
 
 
