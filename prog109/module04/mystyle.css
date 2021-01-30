@@ -8,7 +8,8 @@
 h1 {
   font-family: 'FantasqueSansMonoRegular';
   font-weight: normal;
-    font-style: normal;
+  font-style: normal;
+  text-transform: uppercase;
 }
 body {
   width: 90%;
