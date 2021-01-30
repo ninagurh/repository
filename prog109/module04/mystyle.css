@@ -49,6 +49,7 @@ img {
 section{
   height: 30em;
   margin: 1%;
+  padding: 1%;
   margin-bottom: 1em;
   background-color: lightgrey;
 }
