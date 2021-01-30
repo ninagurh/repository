@@ -1,13 +1,14 @@
+
+* {
+  font-family: Arial, Verdana, sans-serif;
+  color: #665544;
+  text-align: center;}
 @font-face {
   font-family: 'FantasqueSansMonoRegular';
   src: url("http://fontlibrary.org/face/fantasque-sans-mono");}
 h1 {
   font-family: 'FantasqueSansMonoRegular';
 }
-* {
-  font-family: Arial, Verdana, sans-serif;
-  color: #665544;
-  text-align: center;}
 body {
   width: 90%;
   margin: 0 auto;
@@ -38,13 +39,14 @@ article.column1 {
 article.column2 {
   background-color: lightyellow;}
 article.column3 {
-  background-color: moccasin;}
+  background-color: lightseagreen;}
 img {
   width: 75%;
   float: left;
 }
 section{
-  height: 20em;
+  height: 30em;
+  margin: 1%;
   margin-bottom: 1em;
   background-color: lightgrey;
 }
