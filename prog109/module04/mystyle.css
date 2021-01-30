@@ -4,12 +4,11 @@
   text-align: center;}
 @font-face {
     font-family: 'FantasqueSansMonoRegular';
-        src: url('/assets/fonts/fantasque-sans-mono/99bd6bf2755c7f6b5f5c62daf6807aea/f47be69e1b8c931931d2da5b5e9e9797/FantasqueSansMonoRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 h1 {
   font-family: 'FantasqueSansMonoRegular';
+  font-weight: normal;
+    font-style: normal;
 }
 body {
   width: 90%;
