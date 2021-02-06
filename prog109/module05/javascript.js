@@ -4,7 +4,7 @@ var operator = 'multiplication'; // Type of calculation
 var i = 1;                 // Set counter to 1
 var msg = '';              // Message
 
-table = prompt("Enter a number");
+table = prompt("Enter a number between 0-10");
 var msg = '<h2>Multiplication Table</h2>';
 
 /* comment out uneccessary code
