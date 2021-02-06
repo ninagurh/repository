@@ -1,0 +1,68 @@
+* {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  color: black;
+  text-align: center;}
+a:hover {
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+}
+@font-face {
+    font-family: 'FantasqueSansMonoRegular';
+}
+h1 {
+  font-family: 'FantasqueSansMonoRegular';
+  color: #665544;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("https://cdn1.vectorstock.com/i/thumb-large/51/85/stylish-minimalistic-triangle-shape-lines-grid-vector-13755185.jpg")}
+#content {
+  overflow: auto;}
+nav, section, footer {
+  margin: 1%;}
+article {
+  width: 31.3%;
+  height: 10em;
+  float: left;
+  margin: 1%;
+  margin-bottom: 1em;}
+article.column3 {
+  margin-right: 0%;}
+li {
+  display: inline;
+  padding: 0.5em;}
+nav {
+  background-color: ;
+  opacity: 0.7;
+  padding: 0.5em 0;}
+footer {
+  background-color: lightpink;
+  padding: 0.5em 0;}  
+article.column1, article.column2, article.column3 {
+  background-color: lightgrey;
+  font-weight: bold;
+  opacity: 0.7;}
+img {
+  width: 60%;
+  float: left;
+}
+section{
+  height: 30em;
+  margin: 1%;
+  padding: 1%;
+  margin-bottom: 1em;
+  background-color: lightgrey;
+  opacity: 0.7;
+ 
+}
+
+
+
+
+
