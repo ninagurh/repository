@@ -2,9 +2,13 @@
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   color: black;
   text-align: center;}
+a {
+  text-decoration:none;
+}
 a:hover {
   color: black;
   font-weight: bold;
+  font-weight: underline;
   font-size: larger;
 }
 @font-face {
@@ -42,25 +46,31 @@ nav {
   opacity: 0.7;
   padding: 0.5em 0;}
 footer {
-  background-color: lightpink;
+  background-color: burlywood;
+  text-align: center;
+  opacity: 0.5;
   padding: 0.5em 0;}  
 article.column1, article.column2, article.column3 {
   background-color: lightgrey;
   font-weight: bold;
-  opacity: 0.7;}
+  opacity: 0.5;}
 img {
-  width: 60%;
   float: left;
+  margin: 1em;
 }
-section{
+section {
   height: 30em;
   margin: 1%;
   padding: 1%;
   margin-bottom: 1em;
-  background-color: lightgrey;
-  opacity: 0.7;
- 
+  background-color: burlywood;
+  opacity: 0.7; 
 }
+p {
+  text-align: left;
+  margin: 1.5em; 
+}
+
 
 
 
