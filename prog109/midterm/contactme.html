@@ -25,7 +25,20 @@
 			<section class="main">
 				<h3>Contact Me</h3>
               <p>
-              </p>
+                <form action="thankyou.html" method="get" name="myContact">
+                <fieldset>
+                  <legend>Your Details</legend>
+                  <label><p>Name: <br/>
+                    <input type='text' name='name' required='required' /><br/></label>
+                  <label>Email: <br/>
+                    <input type='email' name='email' required='required' /><br/></label>
+                  <label id='comment'>Comment: <br/>
+                    <input type='text' name='comment' required='required' /> <br/></label>
+                  <input type='submit' value='Submit' /> 
+              
+              </fieldset>    
+              </form>
+               </p></p>
 			</section>
 			<article class="column1">
 				<h4>Column One</h4>
@@ -38,7 +51,9 @@
 			</article>
 		</div>
 		<footer>
-			<p>&copy; Copyright 2011</p>
+			<h5>&copy; Copyright 2011</h5>
 		</footer>
+      
+      <script src="javascript.js"></script>
 </body>
 </html>
