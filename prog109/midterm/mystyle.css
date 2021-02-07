@@ -84,6 +84,11 @@ p.artifacts {
 p.description {
   font-style: italic;
 }
+input[type=text], input[type=email] {
+  text-align: left;
+  width: 100%;
+}
+
 
 
 
