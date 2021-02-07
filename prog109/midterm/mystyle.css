@@ -116,8 +116,12 @@ h4 {
 }
 table {
   border: 1px groove black;
+  padding: 10px;
 }
 td {
   padding: 10px; 
+}
+#modules {
+  text-decoration: underline;
 }
 
