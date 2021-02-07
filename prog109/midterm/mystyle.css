@@ -56,9 +56,8 @@ nav {
   opacity: 0.7;
   padding: 0.5em 0;}
 footer {
-  background-color: burlywood;
+  background-color: white;
   text-align: center;
-  opacity: 0.5;
   padding: 0.5em 0;}  
 article.column1, article.column2, article.column3 {
   background-color: lightgrey;
@@ -73,6 +72,8 @@ section {
   height: 20em;
   margin: 1%;
   padding: 4%;
+  padding-right: 10%;
+  padding-left: 10%;
   margin-bottom: 1em;
   background-color: burlywood;
   opacity: 0.7; 
@@ -115,5 +116,8 @@ h4 {
 }
 table {
   border: 1px groove black;
+}
+td {
+  padding: 10px; 
 }
 
