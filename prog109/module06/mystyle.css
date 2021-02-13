@@ -1,6 +1,7 @@
 	
 #upLeft {
 float: left;
+
 }
 #downLeft {
 float: left;
@@ -16,4 +17,7 @@ float: left;
 }
 .clear {
 clear: both;
+}
+.space {
+  color:white;
 }
