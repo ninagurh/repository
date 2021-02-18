@@ -62,7 +62,7 @@ footer {
 article.column1, article.column2, article.column3 {
   background-color: lightgrey;
   font-weight: normal;
-  opacity: 0.5;}
+  opacity: 0.7;}
 img {
   float: left;
   margin: 1em;
@@ -128,4 +128,3 @@ td {
 #modules {
   text-decoration: underline;
 }
-
