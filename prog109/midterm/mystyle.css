@@ -84,6 +84,9 @@ p {
   word-wrap: break-word;
   
 }
+.main{
+  overflow: auto;
+}
 p.artifacts {
   letter-spacing: 2px;
   text-transform: uppercase;
