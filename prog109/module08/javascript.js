@@ -1,6 +1,4 @@
 var errorMessages="";
-var errorMessage="Error! Unable to submit form. Please check entries.";
-
 function validateForm() {
 
 // create variables
