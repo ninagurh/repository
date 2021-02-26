@@ -1,4 +1,4 @@
-var errorMessages;
+var errorMessages="";
 
 function validateForm() {
 
@@ -37,6 +37,7 @@ var zipcode = document.getElementById("Zipcode").value;
 if (firstname==="null" || firstname==="" || firstname.length > 20 || !firstname.match(/^[A-Za-z]+$/)) {
    errorMessages += "<p>Invalid Entry First Name is required" +
    "/ Maximum 20 characters</p>";
+  alert(errorMessages);
 }
 else {
 validFirstname = true;
@@ -49,6 +50,7 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 if (lastname==="null" || lastname==="" || lastname.length > 50 || !lastname.match(/^[A-Za-z]+$/)){
     errorMessages += "<p>Invalid Entry / Last Name is required" +
       "/ Maximum 50 characters</p>";
+  alert(errorMessages);
 }
 else {
 validLastname = true;
@@ -63,6 +65,7 @@ var dotpos = userEmail.lastIndexOf(".");
 
 if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length){
     errorMessages = "<p>Invalid Email</p>";
+  alert(errorMessages);
 }
 else {
 validEmail = true;
@@ -75,6 +78,7 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 if (isNaN(phone) || phone.length >15 || phone===null || phone==="") {
   errorMessages = "<p>Invalid Entry / Phone is required " +
    "/ Maximum 15 digits</p>";
+  alert(errorMessages);
 }
 else {
 validPhone = true;
@@ -87,6 +91,7 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 if (username==="null" || username==="" || username.length > 12) {
   errorMessages += "<p>Invalid Entry /" +
     "Username is required / Maximum 12 characters</p>";
+  alert(errorMessages);
 }
 else {
 validUsername = true;
@@ -99,6 +104,7 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 if (password==="null" || password.length< 7){
   errorMessages += "<p>Invalid Entry /" +
     "Password is required / Maximum 7 characters</p>";
+  alert(errorMessages);
 }
 else {
 validPassword = true;
@@ -111,6 +117,7 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 if (address==="null" || address==="") {
   errorMessages += "<p>Invalid Entry /" +
     "Address is required</p>";
+  alert(errorMessages);
 }
 else {
 validAddress = true;
@@ -123,6 +130,7 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 if (city==="null" || city==="") {
   errorMessages += "<p>Invalid Entry /" +
     "City is required</p>";
+  alert(errorMessages);
 }
 else {
 validCity = true;
@@ -135,6 +143,7 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 if (state==="null" || state==="") {
   errorMessages += "<p>Invalid Entry /" +
     "State is required</p>";
+  alert(errorMessages);
 }
 else {
 validState = true;
@@ -147,6 +156,7 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 if (country==="null" || country==="") {
   errorMessages += "<p>Invalid Entry /" +
     "Country is required</p>";
+  alert(errorMessages);
 }
 else {
 validCountry = true;
@@ -161,6 +171,7 @@ if (country === "USA" &&
 // validate Zipcode according to the rules
   errorMessages += "<p>Invalid Entry / Zip is required for USA" +
       "/ Maximum 5 digits</p>";
+  alert(errorMessages);
 }
 else {
 validZipcode = true;
