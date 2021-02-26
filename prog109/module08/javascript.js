@@ -1,4 +1,5 @@
 var errorMessages="";
+var errorMessage="Error! Unable to submit form. Please check entries.";
 
 function validateForm() {
 
@@ -35,9 +36,8 @@ var zipcode = document.getElementById("Zipcode").value;
 
 
 if (firstname==="null" || firstname==="" || firstname.length > 20 || !firstname.match(/^[A-Za-z]+$/)) {
-   errorMessages += "<p>Invalid Entry First Name is required" +
-   "/ Maximum 20 characters</p>";
-  alert(errorMessages);
+   errorMessages = "Invalid Entry First Name is required" +
+   "/ Maximum 20 characters";
 }
 else {
 validFirstname = true;
@@ -45,12 +45,11 @@ return (validFirstname);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesFN").innerHTML = errorMessages;
 
 if (lastname==="null" || lastname==="" || lastname.length > 50 || !lastname.match(/^[A-Za-z]+$/)){
-    errorMessages += "<p>Invalid Entry / Last Name is required" +
-      "/ Maximum 50 characters</p>";
-  alert(errorMessages);
+    errorMessages = "Invalid Entry / Last Name is required" +
+      "/ Maximum 50 characters";
 }
 else {
 validLastname = true;
@@ -58,14 +57,13 @@ return (validLastname);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesLN").innerHTML = errorMessages;
 
 var atpos = userEmail.indexOf("@");
 var dotpos = userEmail.lastIndexOf(".");
 
 if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length){
-    errorMessages = "<p>Invalid Email</p>";
-  alert(errorMessages);
+    errorMessages = "Invalid Email";
 }
 else {
 validEmail = true;
@@ -73,12 +71,11 @@ return (validEmail);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesEM").innerHTML = errorMessages;
 
 if (isNaN(phone) || phone.length >15 || phone===null || phone==="") {
-  errorMessages = "<p>Invalid Entry / Phone is required " +
-   "/ Maximum 15 digits</p>";
-  alert(errorMessages);
+  errorMessages = "Invalid Entry / Phone is required " +
+   "/ Maximum 15 digits";
 }
 else {
 validPhone = true;
@@ -86,12 +83,11 @@ return (validPhone);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesPH").innerHTML = errorMessages;
 
 if (username==="null" || username==="" || username.length > 12) {
-  errorMessages += "<p>Invalid Entry /" +
-    "Username is required / Maximum 12 characters</p>";
-  alert(errorMessages);
+  errorMessages = "Invalid Entry /" +
+    "Username is required / Maximum 12 characters";
 }
 else {
 validUsername = true;
@@ -99,12 +95,11 @@ return (validUsername);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesUN").innerHTML = errorMessages;
 
 if (password==="null" || password.length< 7){
-  errorMessages += "<p>Invalid Entry /" +
-    "Password is required / Maximum 7 characters</p>";
-  alert(errorMessages);
+  errorMessages = "Invalid Entry /" +
+    "Password is required / Maximum 7 characters";
 }
 else {
 validPassword = true;
@@ -112,12 +107,11 @@ return (validPassword);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesPW").innerHTML = errorMessages;
 
 if (address==="null" || address==="") {
-  errorMessages += "<p>Invalid Entry /" +
-    "Address is required</p>";
-  alert(errorMessages);
+  errorMessages = "Invalid Entry /" +
+    "Address is required";
 }
 else {
 validAddress = true;
@@ -125,12 +119,11 @@ return (validAddress);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesAD").innerHTML = errorMessages;
 
 if (city==="null" || city==="") {
-  errorMessages += "<p>Invalid Entry /" +
-    "City is required</p>";
-  alert(errorMessages);
+  errorMessages = "Invalid Entry /" +
+    "City is required";
 }
 else {
 validCity = true;
@@ -138,12 +131,11 @@ return (validCity);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesCT").innerHTML = errorMessages;
 
 if (state==="null" || state==="") {
-  errorMessages += "<p>Invalid Entry /" +
-    "State is required</p>";
-  alert(errorMessages);
+  errorMessages = "Invalid Entry /" +
+    "State is required";
 }
 else {
 validState = true;
@@ -151,12 +143,11 @@ return (validState);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesST").innerHTML = errorMessages;
 
 if (country==="null" || country==="") {
-  errorMessages += "<p>Invalid Entry /" +
-    "Country is required</p>";
-  alert(errorMessages);
+  errorMessages = "Invalid Entry /" +
+    "Country is required";
 }
 else {
 validCountry = true;
@@ -164,20 +155,19 @@ return (validCountry);
 }
 
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesCY").innerHTML = errorMessages;
 
 if (country === "USA" &&
     (zipcode ==="null" || zipcode==="" || zipcode.length > 5)) {
 // validate Zipcode according to the rules
-  errorMessages += "<p>Invalid Entry / Zip is required for USA" +
-      "/ Maximum 5 digits</p>";
-  alert(errorMessages);
+  errorMessages = "Invalid Entry / Zip is required for USA" +
+      "/ Maximum 5 digits";
 }
 else {
 validZipcode = true;
 return (validZipcode);
 }
 //4) Send error message to HTML
-document.getElementById("errorMessages").innerHTML = errorMessages;
+document.getElementById("errorMessagesZC").innerHTML = errorMessages;
 
 }
