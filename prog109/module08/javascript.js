@@ -1,63 +1,105 @@
-<form action="" id="myform" >
-<p>
-	<label for='FirstName'>First Name:</label>
-	<input type="text" id="FirstName" name="FirstName" />
-</p>
-<p>
-	<label for='LastName'>Last Name:</label>
-	<input type="text" id="LastName" name="LastName" />
-</p>
-<p>
-	<label for='EMail'>EMail:</label>
-	<input type="text" id="EMail" name="EMail" />
-</p>
-<p>
-	<label for='Phone'>Phone:</label>
-	<input type="text" id="Phone" name="Phone" />
-</p>
-<p>
-	<label for='Address'>Address:</label>
-	<textarea cols="20" rows="5" id="Address" name="Address"></textarea>
-</p>
-<p>
-	<label for='Country'>Country:</label>
-	<select id="Country"  name="Country">
-        <option value="000" selected="selected">[choose yours]</option>
-        <option value="008">Albania</option>
-        <option value="012">Algeria</option>
-        <option value="016">American Samoa</option>
-        <option value="020">Andorra</option>
-        <option value="024">Angola</option>
-        <option value="660">Anguilla</option>
-        <option value="010">Antarctica</option>
-        <option value="028">Antigua And Barbuda</option>
-        <option value="032">Argentina</option>
-        <option value="051">Armenia</option>
-        <option value="533">Aruba</option>
-	</select>
-</p>
-<p>
-	<input type="submit" name="submit" value="Submit">
-</p>
-</form>
+var errorMessages;
 
-<script  type="text/javascript">
- var frmvalidator = new Validator("myform");
- frmvalidator.addValidation("FirstName","req","Please enter your First Name");
- frmvalidator.addValidation("FirstName","maxlen=20",
-		"Max length for FirstName is 20");
+function validateForm() {
+// First Name
 
- frmvalidator.addValidation("LastName","req");
- frmvalidator.addValidation("LastName","maxlen=20");
+var validFirstname=false;
+//2) read value from HTML
+var firstname = document.getElementById("FirstName").value;
+//3) Do validation
+if (firstname==="null" || firstname==="" || firstname.length > 20 || !firstname.match(/^[A-Za-z]+$/)) {
+   errorMessages += "<p>Invalid Entry First Name is required" +
+   "/ Maximum 20 characters</p>";
+//4) Send error message to HTML
+document.getElementById("errorMessages").innerHTML = errorMessages;
+}
+  else {
+validFirstname = true;
+//5) return status of each field
+  return (validFirstname);
+  }
 
- frmvalidator.addValidation("Email","maxlen=50");
- frmvalidator.addValidation("Email","req");
- frmvalidator.addValidation("Email","email");
+// Last Name
 
- frmvalidator.addValidation("Phone","maxlen=50");
- frmvalidator.addValidation("Phone","numeric");
+var validLastname=false;
+//2) read value from HTML
+var lastname = document.getElementById("LastName").value;
+//3) Do validation
+if (lastname==="null" || lastname==="" || lastname.length > 50 || !lastname.match(/^[A-Za-z]+$/)){
+    errorMessages += "<p>Invalid Entry / Last Name is required" +
+      "/ Maximum 50 characters</p>";
+//4) Send error message to HTML
+document.getElementById("errorMessages").innerHTML = errorMessages;
+}
+else {
+validLastname = true;
+//5) return status of each field
+return (validLastname);
+}
 
- frmvalidator.addValidation("Address","maxlen=50");
- frmvalidator.addValidation("Country","dontselect=000");
+// Email
 
-</script>
+var validEmail=false;
+var userEmail = document.getElementById("Email").value;
+var atpos = userEmail.indexOf("@");
+var dotpos = userEmail.lastIndexOf(".");
+if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length){
+    errorMessages = "<p>Invalid Email</p>";
+//4) Send error message to HTML
+document.getElementById("errorMessages").innerHTML = errorMessages;
+}
+else {
+  validEmail=true;
+  return (validEmail);
+}
+
+// Phone
+var validPhone=false;
+var phone = document.getElementById("Phone").value;
+if (isNaN(phone) || phone.length >15 || phone===null || phone==="") {
+ errorMessages = "<p>Invalid Entry / Phone is required " +
+   "/ Maximum 15 digits</p>";
+//4) Send error message to HTML
+document.getElementById("errorMessages").innerHTML = errorMessages;
+}
+else {
+  validPhone=true;
+  return (validPhone);
+}
+
+// Username
+
+var validUsername =false;
+//2) read value from HTML
+var username = document.getElementById("Username").value;
+//3) Do validation
+if (username==="null" || username==="" || username.length > 12) {
+    errorMessages += "<p>Invalid Entry /" +
+    "Username is required / Maximum 12 characters</p>";
+//4) Send error message to HTML
+document.getElementById("errorMessages").innerHTML = errorMessages;
+}
+  else {
+   validFirstname = true;
+//5) return status of each field
+  return (validFirstname);
+  }
+
+// Zipcode
+var validZipcode=false;
+var country = document.getElementById("Country").value;
+var zipcode = document.getElementById("Zipcode").value;
+if (country === "USA" &&
+    (zipcode ==="null" || zipcode==="" || zipcode.length > 5)) {
+// validate Zipcode according to the rules
+    errorMessages += "<p>Invalid Entry / Zip is required" +
+      "/ Maximum 5 digits</p>";
+//4) Send error message to HTML
+document.getElementById("errorMessages").innerHTML = errorMessages;
+}
+else {
+  validZipcode = true;
+//5) return status of each field
+return (validZipcode);
+}
+}
