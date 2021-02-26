@@ -4,45 +4,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Artifact 4</title>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">	
-</head>
-<body>
-  <div id="errorMessages"></div>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
   
+</head>
+<body>  
 <form action="thankyou.html" id="myform" onsubmit="return validateForm();">
 <p>
 	<label for='FirstName'>First Name:</label>
 	<input type="text" id="FirstName" name="FirstName" />
 </p>
+  <div class="error" id="errorMessagesFN"></div>
 <p>
 	<label for='LastName'>Last Name:</label>
 	<input type="text" id="LastName" name="LastName" />
 </p>
+  <div class="error" id="errorMessagesLN"></div>
 <p>
 	<label for='Email'>EMail:</label>
 	<input type="text" id="Email" name="Email" />
 </p>
+  <div class="error" id="errorMessagesEM"></div>
 <p>
 	<label for='Phone'>Phone:</label>
 	<input type="text" id="Phone" name="Phone" />
 </p>
+  <div class="error" id="errorMessagesPH"></div>
   <p>
 	<label for='Username'>Username:</label>
 	<input type="text" id="Username" name="Username" />
 </p>
+  <div class="error" id="errorMessagesUN"></div>
     <p>
 	<label for='Password'>Password:</label>
 	<input type="text" id="Password" name="Password" />
 </p>
-  
+  <div class="error" id="errorMessagesPW"></div>
 <p>
 	<label for='Address'>Address:</label>
 	<textarea cols="20" rows="5" id="Address" name="Address"></textarea>
 </p>
+  <div class="error" id="errorMessagesAD"></div>
       <p>
 	<label for='City'>City:</label>
 	<input type="text" id="City" name="City" />
 </p>
+  <div class="error" id="errorMessagesCT"></div>
   <p>
 	<label for='State'>State:</label>
 	<select id="State"  name="State">
@@ -100,6 +106,7 @@
 	<option value="WY">Wyoming</option>
 	</select>
 </p>
+  <div class="error" id="errorMessagesST"></div>
 <p>
 	<label for='Country'>Country:</label>
 	<select id="Country"  name="Country">
@@ -118,15 +125,17 @@
         <option value="533">Aruba</option>
 	</select>
 </p>
+  <div class="error" id="errorMessagesCY"></div>
   <p>
 	<label for='Zipcode'>Zip:</label>
 	<input type="text" id="Zipcode" name="Zipcode" />
   </p>
+  <div class="error" id="errorMessagesZC"></div>
 <p>
 	<input type="submit" name="submit" value="Submit">
 </p>
 </form>
-
+<script type="text/javascript" src="javascript.js"></script>
 </body>
   
   <footer><p><a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0" height="31" width="88" /></a></p>
@@ -134,3 +143,14 @@
    </div>
   </footer>
 </html>
+
+
+
+
+
+
+
+
+
+
+
