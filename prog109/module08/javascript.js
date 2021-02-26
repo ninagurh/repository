@@ -133,7 +133,7 @@ return (validCity);
 //4) Send error message to HTML
 document.getElementById("errorMessagesCT").innerHTML = errorMessages;
 
-if (state==="null" || state==="") {
+if (state==="000") {
   errorMessages = "Invalid Entry /" +
     "State is required";
 }
@@ -145,7 +145,7 @@ return (validState);
 //4) Send error message to HTML
 document.getElementById("errorMessagesST").innerHTML = errorMessages;
 
-if (country==="null" || country==="") {
+if (country==="000") {
   errorMessages = "Invalid Entry /" +
     "Country is required";
 }
@@ -157,17 +157,27 @@ return (validCountry);
 //4) Send error message to HTML
 document.getElementById("errorMessagesCY").innerHTML = errorMessages;
 
-if (country === "USA" &&
-    (zipcode ==="null" || zipcode==="" || zipcode.length > 5)) {
+if (country !== "USA") {
+  validZipcode = true;
+  return (validZipcode)
+}
+else {
+  if (zipcode ==="null" || zipcode==="" || zipcode.length == 5) {
 // validate Zipcode according to the rules
   errorMessages = "Invalid Entry / Zip is required for USA" +
       "/ Maximum 5 digits";
+  }
+  else {
+    validZipcode = true;
+    return (validZipcode);
+  }
 }
-else {
-validZipcode = true;
-return (validZipcode);
-}
+
 //4) Send error message to HTML
 document.getElementById("errorMessagesZC").innerHTML = errorMessages;
-
 }
+
+
+
+
+
