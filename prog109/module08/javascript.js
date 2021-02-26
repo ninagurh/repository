@@ -62,7 +62,7 @@ var atpos = userEmail.indexOf("@");
 var dotpos = userEmail.lastIndexOf(".");
 
 if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=userEmail.length){
-    errorMessages = "<p>Invalid Email</p>";  
+    errorMessages = "<p>Invalid Email</p>";
 }
 else {
 validEmail = true;
