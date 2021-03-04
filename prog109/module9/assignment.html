@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Module 9</title>
+</head>
+  
+<body>
+  
+<h1>Click anywhere on the screen!<h1>
+<br/><br/>    
+<button>Clear</button>
+
+<script>
+  window.addEventListener("click", event => {
+    let dot = document.createElement("div");
+    dot.className = "dot";
+    dot.style.left = (event.pageX - 4) + "px";
+    dot.style.top = (event.pageY - 4) + "px";
+    document.body.appendChild(dot);
+  });
+</script>
+  
+</body>
+</html>
