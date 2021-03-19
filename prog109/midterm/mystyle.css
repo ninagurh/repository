@@ -42,7 +42,7 @@ nav, section, footer {
   margin: 1%;}
 article {
   width: 31.3%;
-  height: 18em;
+  height: 20em;
   float: left;
   margin: 1%;
   margin-bottom: 1em;}
@@ -130,4 +130,10 @@ td {
 }
 #modules {
   text-decoration: underline;
+}
+img.nicko {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
