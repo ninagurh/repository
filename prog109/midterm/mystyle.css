@@ -42,8 +42,8 @@ nav, section, footer {
   margin: 1%;}
 article {
   width: 31.3%;
-  height: 20em;
-  float: center;
+  height: 18em;
+  float: left;
   margin: 1%;
   margin-bottom: 1em;}
 li {
@@ -130,7 +130,4 @@ td {
 }
 #modules {
   text-decoration: underline;
-}
-#nicko {
- text-align: center;
 }
