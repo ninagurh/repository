@@ -131,6 +131,6 @@ td {
 #modules {
   text-decoration: underline;
 }
-#nicko {
- float: center;
+p.nicko {
+ text-align: center;
 }
